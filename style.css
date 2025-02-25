@@ -1,77 +1,89 @@
-/* Reset básico */
-* {
-    margin: 0;
+/* Estilos básicos */
+body, html {
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
-    padding: 20px;
+    overflow-x: hidden; /* Evita rolagem horizontal */
 }
 
 header {
     text-align: center;
-    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
 }
 
 .profile-photo {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 3px solid #333;
-    margin-bottom: 10px;
+    border: 5px solid #fff;
 }
 
 h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    margin: 10px 0;
+    font-size: 2em;
 }
 
-header p {
-    font-size: 1.2rem;
-    color: #555;
+p {
+    margin: 5px 0;
+    font-size: 1.2em;
 }
 
 section {
-    margin-bottom: 30px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 1.8em;
     margin-bottom: 10px;
     color: #333;
-    border-bottom: 2px solid #333;
-    display: inline-block;
 }
 
 ul {
     list-style-type: none;
+    padding: 0;
 }
 
 ul li {
-    background-color: #fff;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    font-size: 1.1em;
 }
 
-a {
-    color: #0073b1;
+.links a {
+    color: #000000;
     text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #a3a3a3;
 }
 
 footer {
     text-align: center;
-    margin-top: 30px;
-    font-size: 0.9rem;
-    color: #777;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Canvas para o cursor personalizado */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* Permite interação com elementos abaixo do canvas */
+    z-index: 9999; /* Garante que o canvas fique acima de tudo */
 }

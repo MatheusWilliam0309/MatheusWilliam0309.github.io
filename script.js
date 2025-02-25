@@ -82,7 +82,7 @@ const canvas = document.querySelector("canvas");
                     const yc = .5 * (trail[i].y + trail[i + 1].y) - scrollY;
                     ctx.quadraticCurveTo(trail[i].x, trail[i].y - scrollY, xc, yc);
                     ctx.lineWidth = params.widthFactor * (params.pointsNumber - i);
-                    ctx.strokeStyle = "#0077cc"; // Cor do rastro
+                    ctx.strokeStyle = "#333341"; // Cor do rastro
                     ctx.stroke();
                 }
                 ctx.lineTo(trail[trail.length - 1].x, trail[trail.length - 1].y - scrollY);
