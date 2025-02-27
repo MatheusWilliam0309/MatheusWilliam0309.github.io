@@ -1,4 +1,3 @@
-/* Estilos básicos */
 body, html {
     padding: 0;
     margin: 0;
@@ -55,6 +54,12 @@ ul {
 ul li {
     margin: 10px 0;
     font-size: 1.1em;
+}
+
+ul.educacao {
+    list-style-type: disc;
+    padding: 0;
+    margin-left: 18px;
 }
 
 .links a {
